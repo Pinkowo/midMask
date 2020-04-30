@@ -35,13 +35,13 @@ const BackDrop =({sth,navigation}) => {
                         onPress={() => setVisible(true)}
                         style={styles.circleBTN}
                         >
-                        <MyText style={styles.text}>成人</MyText>
+                        <Image source={{uri: pics.adult}} style={styles.size}/>
                     </TouchableOpacity>
                     <TouchableOpacity
                         onPress={() => setVisible(true)}
                         style={styles.circleBTN}
                         >
-                        <MyText style={styles.text}>兒童</MyText>
+                        <Image source={{uri: pics.child}} style={styles.size}/>
                     </TouchableOpacity>
                     <View style={{width:15}}></View>
                     <TouchableOpacity
@@ -181,6 +181,10 @@ const styles = StyleSheet.create({
         borderRadius:100,
         backgroundColor:"#fff",
         margin:5
+    },
+    size:{
+        width:40,
+        height:40,
     },
     rectangleBTN:{
         alignItems:'center',
